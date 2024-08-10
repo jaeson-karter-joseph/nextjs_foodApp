@@ -5,6 +5,12 @@ import { getMeals } from "@/lib/meal";
 import { Suspense } from "react";
 import MealsLoadingPage from "./loading-out";
 
+
+export const metadata = {
+  title : "Delicious Meals",
+  description : "Choose your favorite recipe and cook it yourself. it is easy and fun",
+}
+
 async function Meals() {
   const meals = await getMeals();
 
